@@ -49,7 +49,7 @@ do_fslc_bootpart () {
 	rm -fr "${TRUSTME_BOOTPART_DIR}"
 	install -d "${TRUSTME_BOOTPART_DIR}"
 	
-	cp --dereference "${DEPLOY_DIR_IMAGE}/fitImage-trustx-cml-initramfs-${MACHINE}-${MACHINE}" "${TRUSTME_BOOTPART_DIR}/fitImage"
+	cp --dereference "${DEPLOY_DIR_IMAGE}/cml-kernel/fitImage-trustx-cml-initramfs-${MACHINE}-${MACHINE}" "${TRUSTME_BOOTPART_DIR}/fitImage"
 }
 
 
